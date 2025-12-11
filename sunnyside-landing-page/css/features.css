@@ -1,0 +1,32 @@
+/*-------------------------- *\
+  #FEATURES 
+\*---------------------------*/
+.feature__bg {
+  display: flex;
+  align-items: flex-end; /* for feature__content */
+
+  height: 600px; /* for background-image */
+}
+.feature__bg--graphic {
+  background-image: url("../assets/images/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feature__bg--photography {
+  background-image: url("../assets/images/mobile/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature__content {
+  padding: 48px 16px;
+}
+
+@media (min-width: 48rem) {
+  .feature__bg--graphic {
+    background-image: url("../assets/images/desktop/image-graphic-design.jpg");
+  }
+  .feature__bg--photography {
+    background-image: url("../assets/images/desktop/image-photography.jpg");
+  }
+}

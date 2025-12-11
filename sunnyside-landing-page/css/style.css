@@ -1,0 +1,122 @@
+/** 
+* CONTENTS
+*
+* RESET
+* GLOBAL STYLES
+* CARDS
+* BUTTONS
+* LAYOUT
+* MEDIA-QUERIES
+*/
+
+/*-------------------------- *\
+  #RESET 
+\*---------------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------- *\
+  #GLOBAL-STYLES 
+\*---------------------------*/
+:root {
+  /* Colors */
+  --red-400: hsl(7, 99%, 70%);
+  --yellow-500: hsl(51, 100%, 49%);
+
+  --green-800: hsl(167, 40%, 24%); /* graphic design text */
+  ---blue-800: hsl(198, 62%, 26%); /* photography text */
+  --green-500: hsl(167, 34%, 41%); /* footer */
+
+  --grey-950: hsl(212, 27%, 19%);
+  --grey-600: hsl(213, 9%, 39%);
+  --grey-550: hsl(232, 10%, 55%);
+  --grey-400: hsl(210, 4%, 67%);
+  --white: hsl(0, 100%, 100%);
+
+  /* Fonts */
+  --ff-primary: "Fraunces", serif;
+  --ff-secondary: "Barlow", sans-serif;
+
+  --fs-base: 18px;
+
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+html {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-base);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-black);
+}
+p {
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/*-------------------------- *\
+  #UTILITIES 
+\*---------------------------*/
+
+/* Typography */
+.dark-text {
+  color: var(--grey-950);
+}
+.light-text {
+  color: var(--grey-600);
+}
+.green-text {
+  color: var(--green-800);
+}
+.blue-text {
+  color: var(---blue-800);
+}
+
+/* Layout */
+.row {
+  display: flex;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+/* change alignment with media query */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .flex-col {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
