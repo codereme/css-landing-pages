@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Colors */
+  --blue-950: hsl(256, 26%, 20%);
+  --blue-500: hsl(216, 30%, 68%);
+  --gray-950: hsl(270, 9%, 17%);
+  --gray-700: hsl(273, 4%, 51%);
+  --gray-50: hsl(0, 0%, 98%);
+
+  /* Fonts */
+  --ff-primary: "DM Serif Display", serif;
+  --ff-secondary: "Karla", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
