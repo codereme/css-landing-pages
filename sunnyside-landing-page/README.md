@@ -18,7 +18,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [https://codereme.github.io/css-landing-pages/sunnyside-landing-page/index.html](https://codereme.github.io/css-landing-pages/css-landing-pages/sunnyside-landing-page/index.html)
+- Live Site URL: [https://codereme.github.io/css-landing-pages/sunnyside-landing-page/index.html](https://codereme.github.io/css-landing-pages/sunnyside-landing-page/index.html)
 
 ## Author
 
