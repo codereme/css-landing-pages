@@ -27,14 +27,15 @@
   --red-400: hsl(7, 99%, 70%);
   --yellow-500: hsl(51, 100%, 49%);
 
-  --green-800: hsl(167, 40%, 24%); /* graphic design text */
-  ---blue-800: hsl(198, 62%, 26%); /* photography text */
-  --green-500: hsl(167, 34%, 60%); /* footer */
+  --green-800: hsl(167, 40%, 24%);
+  --green-500: hsl(167, 34%, 71%);
+  --blue-800: hsl(198, 62%, 26%);
+  --blue-400: hsl(198, 81%, 72%);
 
   --grey-950: hsl(212, 27%, 19%);
   --grey-600: hsl(213, 9%, 39%);
   --grey-550: hsl(232, 10%, 55%);
-  --grey-400: hsl(210, 4%, 67%);
+  --grey-400: hsl(210, 4%, 57%);
   --white: hsl(0, 100%, 100%);
 
   /* Fonts */
@@ -96,13 +97,13 @@ img {
   color: var(--grey-950);
 }
 .text-light {
-  color: var(--grey-400);
+  color: var(--grey-600);
 }
 .text-green {
   color: var(--green-800);
 }
 .text-blue {
-  color: var(---blue-800);
+  color: var(--blue-800);
 }
 
 .font-small {

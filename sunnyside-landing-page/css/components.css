@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-block-size: 80dvh;
+  min-block-size: 100dvh;
 }
 
 /*-------------------------- *\
@@ -26,7 +26,7 @@
 \*---------------------------*/
 
 .header__logo {
-  inline-size: 6rem;
+  inline-size: 8rem;
   block-size: 3rem;
   color: var(--white);
 }
@@ -44,8 +44,8 @@
 .hero__content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  block-size: 360px;
+  justify-content: center;
+  block-size: 100dvh;
 }
 .hero__title {
   font-size: 2.5rem;
@@ -129,35 +129,38 @@
   background-color: var(--white);
 }
 .testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
   padding: var(--spacing-lg) var(--spacing-md);
-  gap: 0;
 }
 
 /* Typography */
 .testimonials__title {
   font-family: var(--ff-primary);
-  font-size: 24px;
+  font-size: 1.33rem;
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   text-align: center;
-  color: var(--grey-400);
+  color: var(--grey-550);
 }
 .testimonial__quote {
   font-weight: 400;
-  line-height: 1.5;
   color: var(--grey-600);
-  padding-block: 32px;
+  padding-block: var(--spacing-lg);
 }
 
 .testimonial__name {
   font-family: var(--ff-primary);
   font-weight: var(--fw-black);
   color: var(--grey-950);
-  line-height: 1.9;
 }
 .testimonial__status {
   font-size: 14px;
-  color: var(--grey-400);
+  color: var(--grey-600);
 }
 
 /* Images */
@@ -181,7 +184,6 @@
 @media (min-width: 48rem) {
   .header {
     background-image: url("../assets/images/desktop/image-header.jpg");
-    block-size: 100dvh;
   }
   .service__bg--graphic {
     background-image: url("../assets/images/desktop/image-graphic-design.jpg");
