@@ -3,10 +3,7 @@
 *
 * RESET
 * GLOBAL STYLES
-* CARDS
-* BUTTONS
-* LAYOUT
-* MEDIA-QUERIES
+* UTILITIES
 */
 
 /*-------------------------- *\
@@ -26,12 +23,13 @@
 \*---------------------------*/
 :root {
   /* Colors */
+
   --red-400: hsl(7, 99%, 70%);
   --yellow-500: hsl(51, 100%, 49%);
 
   --green-800: hsl(167, 40%, 24%); /* graphic design text */
   ---blue-800: hsl(198, 62%, 26%); /* photography text */
-  --green-500: hsl(167, 34%, 41%); /* footer */
+  --green-500: hsl(167, 34%, 60%); /* footer */
 
   --grey-950: hsl(212, 27%, 19%);
   --grey-600: hsl(213, 9%, 39%);
@@ -40,6 +38,7 @@
   --white: hsl(0, 100%, 100%);
 
   /* Fonts */
+
   --ff-primary: "Fraunces", serif;
   --ff-secondary: "Barlow", sans-serif;
 
@@ -47,27 +46,40 @@
 
   --fw-bold: 700;
   --fw-black: 900;
+
+  /* Spacings */
+
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
 }
 html {
-  font-family: var(--ff-secondary);
   font-size: var(--fs-base);
 }
-
+body {
+  font-family: var(--ff-secondary);
+  line-height: 1.5;
+}
 h1,
 h2,
 h3 {
   font-family: var(--ff-primary);
   font-weight: var(--fw-black);
 }
-p {
-  line-height: 1.5;
+h2 {
+  font-size: 2rem;
 }
-
+h3 {
+  font-size: 1.88rem;
+}
 ul {
   list-style: none;
 }
 a {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
   text-decoration: none;
+  cursor: pointer;
 }
 img {
   max-inline-size: 100%;
@@ -80,43 +92,22 @@ img {
   #UTILITIES 
 \*---------------------------*/
 
-/* Typography */
-.dark-text {
+.text-dark {
   color: var(--grey-950);
 }
-.light-text {
-  color: var(--grey-600);
+.text-light {
+  color: var(--grey-400);
 }
-.green-text {
+.text-green {
   color: var(--green-800);
 }
-.blue-text {
+.text-blue {
   color: var(---blue-800);
 }
 
-/* Layout */
-.row {
-  display: flex;
+.font-small {
+  font-size: 0.88rem;
 }
-.col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  text-align: center;
-}
-/* change alignment with media query */
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  text-align: center;
-}
-
-@media (min-width: 48rem) {
-  .flex-col {
-    align-items: flex-start;
-    text-align: left;
-  }
+.font-medium {
+  font-size: 1.05rem;
 }

@@ -9,6 +9,18 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+## Built with
 
-![](./screenshot.jpg)
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox and CSS Grid
+- Mobile-first workflow
+
+## Links
+
+- Live Site URL: [https://codereme.github.io/css-landing-pages/sunnyside-landing-page/index.html](https://codereme.github.io/css-landing-pages/css-landing-pages/sunnyside-landing-page/index.html)
+
+## Author
+
+- Frontend Mentor - [@codereme](https://www.frontendmentor.io/profile/codereme)
+- Github - [@codereme](https://github.com/codereme)
