@@ -1,15 +1,25 @@
 /** 
 * CONTENTS
-
+* HEADER
 * HERO  
 * SERVICES 
-* 
-* 
+* WORK
+* FOOTER
 */
 
 /*-------------------------- *\
-  # HERO
+  #HEADER
 \*---------------------------*/
+
+.header__logo {
+  inline-size: 8rem;
+  block-size: 2rem;
+}
+
+/*-------------------------- *\
+  #HERO
+\*---------------------------*/
+
 .hero {
   background-image: url("../assets/patterns/bg-pattern-intro-left-mobile.svg"),
     url("../assets/patterns/bg-pattern-intro-right-mobile.svg");
@@ -62,7 +72,7 @@
   background-repeat: no-repeat;
   background-position: top right;
 }
-.work h2 {
+.work__title {
   font-size: 2.5rem;
   color: var(--gray-50);
   margin-block-end: var(--spacing-150);
@@ -79,24 +89,5 @@
 }
 .footer__logo {
   inline-size: 8rem;
-}
-.footer__social-icon {
-  inline-size: 1.8rem;
-  block-size: 1.8rem;
-  color: var(--gray-700);
-}
-.footer__menu {
-  gap: 1rem;
-}
-.footer__title {
-  font-family: var(--ff-secondary);
-  font-size: 1.2rem;
-  font-weight: var(--fw-bold);
-  text-transform: uppercase;
-  color: var(--gray-700);
-  margin-block: var(--spacing-200);
-}
-.footer__link {
-  font-weight: var(--fw-bold);
-  color: var(--gray-950);
+  block-size: 2rem;
 }

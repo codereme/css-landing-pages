@@ -9,35 +9,56 @@
 
   <meta name="description" content="Solution to Insure landing page challenge on Frontend Mentor.">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
 
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/navigation.css">
   <link rel="stylesheet" href="./css/layout.css">
+
+  <script src="./main.js" defer></script>
 </head>
 
 <body>
-  <header>
+  <header class="header">
+    <div class="container">
 
-    <nav>
-      <svg class="header__logo">
-        <use href="./assets/images/logo-sprite.svg#id-logo"></use>
-      </svg>
+      <nav class="header__nav" id="headerNav">
+        <svg class="header__logo">
+          <use href="./assets/images/logo-sprite.svg#id-logo"></use>
+        </svg>
 
-      <ul>
-        <li><a href="/">How we work</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Account</a></li>
-        <li><a href="">View plans</a></li>
-      </ul>
-    </nav>
+        <button class="header__btn-hamburger" id="btnHamburger">
+          <svg class="header__icon-hamburger">
+            <use href="./assets/images/logo-sprite.svg#id-hamburger"></use>
+          </svg>
 
+          <svg class="header__icon-hamburger--close">
+            <use href="./assets/images/logo-sprite.svg#id-close"></use>
+          </svg>
+        </button>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="">How we work</a>
+          </li>
+          <li>
+            <a class="header__link" href="">Blog</a>
+          </li>
+          <li>
+            <a class="header__link" href="">Account</a>
+          </li>
+          <li>
+            <a class="header__link button" href="">View plans</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div> <!-- end of header container -->
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- Hero section -->
     <section class="hero bg-dark-blue">
       <div class="container">
 
@@ -65,7 +86,7 @@
       </div> <!-- end of hero container -->
     </section>
 
-    <!-- Services -->
+    <!-- Services section -->
     <section class="services bg-light">
       <div class="container container--padded-block-lg">
 
@@ -107,24 +128,26 @@
       </div><!-- end of services container -->
     </section>
 
-    <!-- Work -->
+    <!-- Work section -->
     <section class="work bg-light">
       <div class="container">
+
         <div class="work__content bg-dark-blue col-center">
-          <h2>
+          <h2 class="work__title">
             Find out more about how we work
           </h2>
           <a class="button" href="#">
             How we work
           </a>
         </div>
-      </div>
+
+      </div> <!-- end of work container -->
     </section>
 
   </main>
 
   <footer class="footer">
-    <div class="container container--padded-md">
+    <div class="container container--padded-block-lg">
 
       <div class="col-center md-row">
         <svg class="footer__logo">
