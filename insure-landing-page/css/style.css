@@ -1,3 +1,15 @@
+/** 
+* CONTENTS
+*
+* RESET
+* GLOBAL STYLES
+* UTILITIES
+*/
+
+/*-------------------------- *\
+  #RESET 
+\*---------------------------*/
+
 *,
 *::before,
 *::after {
@@ -5,6 +17,11 @@
   margin: 0;
   padding: 0;
 }
+
+/*-------------------------- *\
+  #GLOBAL-STYLES 
+\*---------------------------*/
+
 :root {
   /* Colors */
   --blue-950: hsl(256, 26%, 20%);
@@ -15,8 +32,57 @@
 
   /* Fonts */
   --ff-primary: "DM Serif Display", serif;
-  --ff-secondary: "Karla", sans-serif;
+  --ff-secondary: "Karla", sans-serif; /* 400-700 */
 
   --fw-regular: 400;
   --fw-bold: 700;
+
+  /* Spacings */
+
+  --spacing-50: 0.5rem;
+  --spacing-100: 1rem;
+  --spacing-150: 1.5rem;
+  --spacing-200: 2rem;
+  --spacing-300: 3rem;
+}
+body {
+  font-family: var(--ff-secondary);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--ff-primary);
+}
+
+.button {
+  padding: 0.5em 2em;
+  border: 1px solid var(--gray-50);
+  font-size: 1rem;
+  color: var(--gray-50);
+}
+.divider {
+  border: 1px solid var(--gray-700);
+}
+/*-------------------------- *\
+  #UTILITIES 
+\*---------------------------*/
+
+.bg-dark-blue {
+  background-color: var(--blue-950);
+}
+.bg-light {
+  background-color: white;
 }
