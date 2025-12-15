@@ -22,7 +22,7 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container container--header ">
 
       <nav class="header__nav" id="headerNav">
         <svg class="header__logo">
@@ -30,14 +30,16 @@
         </svg>
 
         <button class="header__btn-hamburger" id="btnHamburger">
+
           <svg class="header__icon-hamburger">
-            <use href="./assets/images/logo-sprite.svg#id-hamburger"></use>
+            <use href="./assets/icons/icons-sprite.svg#id-hamburger"></use>
           </svg>
 
-          <svg class="header__icon-hamburger--close">
-            <use href="./assets/images/logo-sprite.svg#id-close"></use>
+          <svg class="header__icon-hamburger--close hidden">
+            <use href="./assets/icons/icons-sprite.svg#id-close"></use>
           </svg>
         </button>
+
         <ul class="header__menu">
           <li>
             <a class="header__link" href="">How we work</a>
@@ -49,7 +51,7 @@
             <a class="header__link" href="">Account</a>
           </li>
           <li>
-            <a class="header__link button" href="">View plans</a>
+            <a class="link-cta header__link--cta" href="">View plans</a>
           </li>
         </ul>
       </nav>
@@ -60,14 +62,14 @@
   <main>
     <!-- Hero section -->
     <section class="hero bg-dark-blue">
-      <div class="container">
+      <div class="container container--hero md-row-reverse">
 
         <picture>
           <source media="(min-width: 768px)" srcset="./assets/images/image-intro-desktop.jpg">
-          <img src="./assets/images/image-intro-mobile.jpg" alt="">
+          <img class="hero__image" src="./assets/images/image-intro-mobile.jpg" alt="">
         </picture>
 
-        <div class="hero__content col-center">
+        <div class="hero__content col md-align-start">
           <h1 class="hero__title">
             Humanizing your insurance.
           </h1>
@@ -78,7 +80,7 @@
             and your loved ones are protected.
           </p>
 
-          <a class="button" href="#">
+          <a class="link-cta hero__link-cta" href="#">
             View plans
           </a>
         </div>
@@ -88,14 +90,14 @@
 
     <!-- Services section -->
     <section class="services bg-light">
-      <div class="container container--padded-block-lg">
+      <div class="container ">
 
         <h2 class="services__title">
           We’re different
         </h2>
 
-        <div class="col-center md-row">
-          <div class="service col-center">
+        <div class="col md-row">
+          <div class="service col">
             <img src="./assets/icons/icon-snappy-process.svg" alt="" aria-hidden="true">
 
             <h3>Snappy Process</h3>
@@ -105,7 +107,7 @@
             </p>
           </div>
 
-          <div class="service col-center">
+          <div class="service col">
             <img src="./assets/icons/icon-affordable-prices.svg" alt="" aria-hidden="true">
             <h3>Affordable Prices</h3>
             <p>
@@ -114,7 +116,7 @@
             </p>
           </div>
 
-          <div class="service col-center">
+          <div class="service col">
             <img src="./assets/icons/icon-people-first.svg" alt="" aria-hidden="true">
             <h3>People First</h3>
             <p>
@@ -132,11 +134,11 @@
     <section class="work bg-light">
       <div class="container">
 
-        <div class="work__content bg-dark-blue col-center">
+        <div class="work__content bg-dark-blue col md-row">
           <h2 class="work__title">
             Find out more about how we work
           </h2>
-          <a class="button" href="#">
+          <a class="link-cta work__link-cta" href="#">
             How we work
           </a>
         </div>
@@ -149,35 +151,35 @@
   <footer class="footer">
     <div class="container container--padded-block-lg">
 
-      <div class="col-center md-row">
+      <div class="footer__content col align-center md-row">
         <svg class="footer__logo">
           <use href="./assets/images/logo-sprite.svg#id-logo"></use>
         </svg>
 
         <ul class="footer__social-links row">
           <li>
-            <a class="footer__social-link" href="/" aria-label="Go to Facebook">
+            <a class="footer__social-link" href="" aria-label="Go to Facebook">
               <svg class="footer__social-icon" aria-hidden="true">
                 <use href="./assets/icons/icons-sprite.svg#id-facebook"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="footer__social-link" href="/" aria-label="Go to Instagram">
+            <a class="footer__social-link" href="" aria-label="Go to Instagram">
               <svg class="footer__social-icon" aria-hidden="true">
                 <use href="./assets/icons/icons-sprite.svg#id-instagram"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="footer__social-link" href="/" aria-label="Go to Twitter">
+            <a class="footer__social-link" href="" aria-label="Go to Twitter">
               <svg class="footer__social-icon" aria-hidden="true">
                 <use href="./assets/icons/icons-sprite.svg#id-twitter"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="/" aria-label="Go to Pinterest">
+            <a class="footer__social-link" href="" aria-label="Go to Pinterest">
               <svg class="footer__social-icon" aria-hidden="true">
                 <use href="./assets/icons/icons-sprite.svg#icon-pinterest"></use>
               </svg>
@@ -188,12 +190,12 @@
 
       <hr class="divider">
 
-      <div class="md-grid-col-5">
+      <div class="md-grid-col-4">
 
-        <div class="col-center">
+        <div class="col align-center md-align-start">
           <h2 class="footer__title">Our company</h2>
 
-          <ul class="footer__menu col-center">
+          <ul class="footer__menu col align-center md-align-start">
             <li>
               <a class="footer__link" href="">How we work</a>
             </li>
@@ -209,10 +211,10 @@
           </ul>
         </div>
 
-        <div class="col-center">
+        <div class="col align-center md-align-start">
           <h2 class="footer__title">Help me</h2>
 
-          <ul class="footer__menu col-center">
+          <ul class="footer__menu col">
             <li>
               <a class="footer__link" href="">FAQ</a>
             </li>
@@ -227,10 +229,10 @@
           </ul>
         </div>
 
-        <div class="col-center">
+        <div class="col align-center md-align-start">
           <h2 class="footer__title">Contact</h2>
 
-          <ul class="footer__menu col-center">
+          <ul class="footer__menu col">
             <li>
               <a class="footer__link" href="">Sales</a>
             </li>
@@ -242,10 +244,10 @@
           </ul>
         </div>
 
-        <div class="col-center">
+        <div class="col align-center md-align-start">
           <h2 class="footer__title">Others</h2>
 
-          <ul class="footer__menu col-center">
+          <ul class="footer__menu col">
             <li>
               <a class="footer__link" href="">Careers</a>
             </li>

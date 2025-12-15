@@ -9,6 +9,10 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
+## Screenshot
+
+![Desktop screenshot](../insure-landing-page/assets/images/screenshot.png)
+
 ## Links
 
 - Live Site URL: [view here](https://codereme.github.io/css-landing-pages/insure-landing-page/index.html)
