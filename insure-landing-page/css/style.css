@@ -1,0 +1,88 @@
+/** 
+* CONTENTS
+*
+* RESET
+* GLOBAL STYLES
+* UTILITIES
+*/
+
+/*-------------------------- *\
+  #RESET 
+\*---------------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------- *\
+  #GLOBAL-STYLES 
+\*---------------------------*/
+
+:root {
+  /* Colors */
+  --blue-950: hsl(256, 26%, 20%);
+  --blue-500: hsl(216, 30%, 68%);
+  --gray-950: hsl(270, 9%, 17%);
+  --gray-700: hsl(273, 4%, 51%);
+  --gray-50: hsl(0, 0%, 98%);
+
+  /* Fonts */
+  --ff-primary: "DM Serif Display", serif;
+  --ff-secondary: "Karla", sans-serif; /* 400-700 */
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Spacings */
+
+  --spacing-50: 0.5rem;
+  --spacing-100: 1rem;
+  --spacing-150: 1.5rem;
+  --spacing-200: 2rem;
+  --spacing-300: 3rem;
+}
+body {
+  font-family: var(--ff-secondary);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--ff-primary);
+}
+
+/*-------------------------- *\
+  #UTILITIES 
+\*---------------------------*/
+
+.bg-dark-blue {
+  background-color: var(--blue-950);
+}
+.bg-light {
+  background-color: white;
+}
+.divider {
+  border: 1px solid var(--gray-700);
+}
+.link-cta {
+  padding: 0.5em 2em;
+  border: 1px solid var(--gray-50);
+  font-size: 1rem;
+  transition: 0.2s ease;
+}

@@ -1,0 +1,114 @@
+/** 
+* CONTENTS
+*
+* RESET
+* GLOBAL STYLES
+* UTILITIES
+*/
+
+/*-------------------------- *\
+  #RESET 
+\*---------------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------- *\
+  #GLOBAL-STYLES 
+\*---------------------------*/
+:root {
+  /* Colors */
+
+  --red-400: hsl(7, 99%, 70%);
+  --yellow-500: hsl(51, 100%, 49%);
+
+  --green-800: hsl(167, 40%, 24%);
+  --green-500: hsl(167, 34%, 71%);
+  --blue-800: hsl(198, 62%, 26%);
+  --blue-400: hsl(198, 81%, 72%);
+
+  --grey-950: hsl(212, 27%, 19%);
+  --grey-600: hsl(213, 9%, 39%);
+  --grey-550: hsl(232, 10%, 55%);
+  --grey-400: hsl(210, 4%, 57%);
+  --white: hsl(0, 100%, 100%);
+
+  /* Fonts */
+
+  --ff-primary: "Fraunces", serif;
+  --ff-secondary: "Barlow", sans-serif;
+
+  --fs-base: 18px;
+
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* Spacings */
+
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
+html {
+  font-size: var(--fs-base);
+}
+body {
+  font-family: var(--ff-secondary);
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-black);
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.88rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/*-------------------------- *\
+  #UTILITIES 
+\*---------------------------*/
+
+.text-dark {
+  color: var(--grey-950);
+}
+.text-light {
+  color: var(--grey-600);
+}
+.text-green {
+  color: var(--green-800);
+}
+.text-blue {
+  color: var(--blue-800);
+}
+
+.font-small {
+  font-size: 0.88rem;
+}
+.font-medium {
+  font-size: 1.05rem;
+}

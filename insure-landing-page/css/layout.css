@@ -1,0 +1,56 @@
+/*-------------------------- *\
+  #LAYOUT
+\*---------------------------*/
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 7rem var(--spacing-100);
+}
+.container--header,
+.container--hero {
+  padding: 0;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-50);
+}
+.align-center {
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container--hero {
+    padding-block: var(--spacing-100);
+    display: flex;
+    justify-content: space-between;
+  }
+  .md-align-start {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .md-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-50);
+  }
+  .md-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .md-grid-col-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: flex-start;
+    gap: var(--spacing-100);
+  }
+}

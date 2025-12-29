@@ -1,0 +1,197 @@
+/** 
+* CONTENTS
+* HEADER
+* LOGOS
+* HERO
+* SERVICES
+* TESTIMONIALS
+* FOOTER
+* MEDIA-QUERIES
+*/
+
+/*-------------------------- *\
+  #HEADER 
+\*---------------------------*/
+
+.header {
+  background-image: url("../assets/images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-block-size: 100dvh;
+}
+
+/*-------------------------- *\
+  #LOGOS 
+\*---------------------------*/
+
+.header__logo {
+  inline-size: 8rem;
+  block-size: 3rem;
+  color: var(--white);
+}
+
+.footer__logo {
+  inline-size: 10rem;
+  color: var(--green-800);
+}
+
+/*-------------------------- *\
+  #HERO 
+  - Hero title with arrow down icon
+\*---------------------------*/
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  block-size: 100dvh;
+}
+.hero__title {
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.hero__icon {
+  inline-size: 2rem;
+}
+
+/*-------------------------- *\
+  #SERVICES 
+
+  - Service with underline coloured 
+    links using pseudoelement ::after,
+    for brand and audience services.
+  - Service with backgrounds images for
+    design graphic and photography 
+\*---------------------------*/
+
+.service__content {
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.service__content p {
+  max-inline-size: 44ch;
+}
+
+.service__link {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-black);
+  text-transform: uppercase;
+  color: var(--grey-950);
+  position: relative;
+}
+/* Underline Links */
+.service__link::after {
+  content: "";
+  position: absolute;
+  inline-size: 128px;
+  block-size: 15px;
+
+  border-radius: 10px;
+  inset-block-start: 68%;
+  inset-inline-start: 0;
+  z-index: -30;
+}
+.service__link--brand::after {
+  background-color: var(--yellow-500);
+}
+.service__link--audience::after {
+  background-color: var(--red-400);
+}
+
+/* Service with background images */
+.service__bg {
+  display: flex;
+  align-items: flex-end; /* for service__content */
+  justify-content: center;
+  block-size: 600px; /* for background-image */
+}
+.service__bg--graphic {
+  background-image: url("../assets/images/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.service__bg--photography {
+  background-image: url("../assets/images/mobile/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+/*-------------------------- *\
+  #TESTIMONIALS 
+\*---------------------------*/
+
+.testimonials {
+  background-color: var(--white);
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+/* Typography */
+.testimonials__title {
+  font-family: var(--ff-primary);
+  font-size: 1.33rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--grey-550);
+}
+.testimonial__quote {
+  font-weight: 400;
+  color: var(--grey-600);
+  padding-block: var(--spacing-lg);
+}
+
+.testimonial__name {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-black);
+  color: var(--grey-950);
+}
+.testimonial__status {
+  font-size: 14px;
+  color: var(--grey-600);
+}
+
+/* Images */
+.testimonial__avatar {
+  inline-size: 4rem;
+  block-size: 4rem;
+  border-radius: 50%;
+}
+/*-------------------------- *\
+  #FOOTER 
+\*---------------------------*/
+
+.footer {
+  background-color: var(--green-500);
+}
+
+/*-------------------------- *\
+  #MEDIA-QUERIES 
+\*---------------------------*/
+
+@media (min-width: 48rem) {
+  .header {
+    background-image: url("../assets/images/desktop/image-header.jpg");
+  }
+  .service__bg--graphic {
+    background-image: url("../assets/images/desktop/image-graphic-design.jpg");
+  }
+  .service__bg--photography {
+    background-image: url("../assets/images/desktop/image-photography.jpg");
+  }
+  .service__content {
+    padding: var(--spacing-xl);
+  }
+}
