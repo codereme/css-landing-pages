@@ -18,12 +18,12 @@ Users should be able to:
 
 ## Screenshot
 
-![Desktop screenshot](./assets/screenshots/desktop-screenshot.png)
+![Desktop screenshot](./screenshots/desktop-screenshot.png)
 
 ## Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-zsFMcqbeeX](https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-zsFMcqbeeX)
-- Live Site URL: [https://codereme.github.io/clipboard-landing-page](https://codereme.github.io/css-landing-pages/clipboard-landing-page/index.html)
+- Live Site URL: [https://codereme.github.io/css-landing-pages/clipboard-landing-page/index.html](https://codereme.github.io/css-landing-pages/clipboard-landing-page/index.html)
 
 ## Author
 

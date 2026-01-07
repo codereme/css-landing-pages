@@ -6,7 +6,9 @@
 
 - Code solution: [view here](https://github.com/codereme/css-landing-pages/tree/main/clipboard-landing-page)
 
-![Desktop screenshot](./clipboard-landing-page/assets/screenshots/desktop-screenshot.png)
+![Desktop screenshot](./clipboard-landing-page/screenshots/desktop-screenshot.png)
+
+---
 
 ## Sunnyside Agency Landing Page
 
@@ -15,6 +17,8 @@
 - Code solution: [view here](https://github.com/codereme/css-landing-pages/tree/main/sunnyside-landing-page)
 
 ![Desktop screenshot](./sunnyside-landing-page/assets/images/screenshot.png)
+
+---
 
 ## Insure Landing Page
 
