@@ -1,50 +1,158 @@
 /** 
 * CONTENTS
-* UTILITIES
+*
+* HEADER
+* HERO
 * SERVICES
 * TESTIMONIALS
 * MEDIA-QUERIES
+*
 */
 
 /*-------------------------- *\
-  #UTILITIES 
+  #HEADER 
 \*---------------------------*/
 
-.container {
-  max-inline-size: 1440px;
-  margin-inline: auto;
-}
-.container--padded-md {
-  padding: var(--spacing-md);
-}
-.container--padded-lg {
-  padding: var(--spacing-lg);
+.header {
+  background-image: url("../assets/images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-block-size: 100dvh;
 }
 
-.grid-col-1 {
-  display: grid;
-}
-.grid-col-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+/*---------------------------------- *\
+  #HERO 
+  - Hero title with arrow down icon
+\*---------------------------------- */
 
-.row {
+.hero__content {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  block-size: 100dvh;
 }
-.col-center {
+
+.hero__title {
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.hero__icon {
+  inline-size: 1.5rem;
+}
+
+/*-------------------------- *\
+  #SERVICES 
+
+  - Service with underline coloured 
+    links using pseudoelement ::after,
+    for brand and audience services.
+  - Service with backgrounds images for
+    design graphic and photography 
+\*---------------------------*/
+
+.service {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+
+  padding: var(--spacing-xl) var(--spacing-md);
+
   text-align: center;
 }
-.flex-col {
+
+.service__title {
+  color: var(--grey-950);
+  max-inline-size: 12ch;
+}
+
+.service__description {
+  font-size: 1.05rem;
+  color: var(--grey-600);
+  max-inline-size: 44ch;
+}
+
+.service__link {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-black);
+  text-transform: uppercase;
+  color: var(--grey-950);
+  cursor: pointer;
+  position: relative;
+}
+
+/* Underline Links */
+.service__link::after {
+  content: "";
+  position: absolute;
+  inline-size: 128px;
+  block-size: 8px;
+
+  border-radius: 10px;
+  inset-block-start: 68%;
+  inset-inline-start: 0;
+  z-index: -30;
+}
+
+.service__link--brand::after {
+  background-color: hsl(51, 86%, 80%);
+}
+
+.service__link--audience::after {
+  background-color: hsl(7, 84%, 83%);
+}
+
+.service__link--brand:hover::after,
+.service__link--brand:focus-visible::after {
+  background-color: var(--yellow-500);
+}
+
+.service__link--audience:hover::after,
+.service__link--audience:focus-visible::after {
+  background-color: var(--red-400);
+}
+
+/* Service with background images */
+
+.bg {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  text-align: center;
+  align-items: flex-end; /* for service-bg */
+  justify-content: center;
+  block-size: 600px; /* for background-image */
+}
+
+.bg--design {
+  background-image: url("../assets/images/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.bg--photography {
+  background-image: url("../assets/images/mobile/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.service__title--design,
+.service__description--design {
+  color: var(--green-800);
+}
+
+.service__title--photography,
+.service__description--photography {
+  color: var(--blue-800);
+}
+
+.service__description--design,
+.service__description--photography {
+  font-size: 0.88rem;
+  max-inline-size: 38ch;
 }
 
 /*-------------------------- *\
@@ -52,7 +160,59 @@
 \*---------------------------*/
 
 .testimonials {
+  background-color: var(--white);
   gap: var(--spacing-lg);
+}
+
+.testimonials__title {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--grey-550);
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.testimonial__quote {
+  font-weight: 400;
+  color: var(--grey-600);
+  padding-block: var(--spacing-lg);
+}
+
+.testimonial__name {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-black);
+  color: var(--grey-950);
+}
+
+.testimonial__status {
+  font-size: 14px;
+  color: var(--grey-600);
+}
+
+.testimonial__avatar {
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
+  border-radius: 50%;
+}
+
+/*-------------------------- *\
+  #FOOTER 
+\*---------------------------*/
+
+.footer {
+  background-color: var(--green-500);
 }
 
 /*-------------------------- *\
@@ -60,40 +220,74 @@
 \*---------------------------*/
 
 @media (min-width: 48rem) {
-  .flex-col {
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-  }
-  .row-md {
-    display: flex;
-  }
-  .md-row-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  .md-grid-col-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .md-grid-col-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  /* Header */
+
+  .header {
+    background-image: url("../assets/images/desktop/image-header.jpg");
   }
 
-  /*-------------------------- *\
-  #SERVICES 
-\*---------------------------*/
-  .service {
-    inline-size: 100%;
+  .hero__title {
+    margin-block-end: 5rem;
   }
+
+  .hero__link {
+    margin-block-end: 8rem;
+  }
+
+  /* Services */
+
   .services__grid picture:nth-child(1) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
+
   .services__grid:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+  }
+
+  .service {
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    inline-size: 100%;
+    padding: clamp(3rem, 8vw, 10rem);
+  }
+
+  .service__title {
+    max-inline-size: 15ch;
+  }
+
+  picture {
+    display: flex;
+  }
+
+  .service-bg {
+    block-size: 250px;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .bg--design {
+    background-image: url("../assets/images/desktop/image-graphic-design.jpg");
+  }
+
+  .bg--photography {
+    background-image: url("../assets/images/desktop/image-photography.jpg");
+  }
+
+  /* Testimonials */
+  .testimonial {
+    gap: var(--spacing-md);
+    justify-content: space-between;
+  }
+
+  .testimonials__title {
+    margin-block-end: 1.5rem;
+  }
+
+  .testimonial__quote {
+    max-inline-size: 34ch;
   }
 }

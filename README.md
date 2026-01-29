@@ -16,7 +16,7 @@
 
 - Code solution: [view here](https://github.com/codereme/css-landing-pages/tree/main/sunnyside-landing-page)
 
-![Desktop screenshot](./sunnyside-landing-page/assets/images/screenshot.png)
+![Desktop screenshot](./sunnyside-landing-page/screenshots/desktop-screenshot.png)
 
 ---
 

@@ -1,8 +1,8 @@
-# Sunnyside agency landing page
+# Sunnyside Agency Landing Page
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### The challenge
+## The challenge
 
 Users should be able to:
 
@@ -13,8 +13,13 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- BEM Methodology
 - Flexbox and CSS Grid
 - Mobile-first workflow
+
+## Screenshot
+
+![Desktop screenshot](../sunnyside-landing-page/screenshots/desktop-screenshot.png)
 
 ## Links
 
